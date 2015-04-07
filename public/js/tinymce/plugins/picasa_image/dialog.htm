@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title></title>
+	<link type="text/css" rel="stylesheet" href="/static/js/tinyscrollbar/tinyscrollbar.css">
+	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
+	<script type="text/javascript" src="js/dialog.js"></script>
+    <script type="text/javascript" src="/static/js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="/static/js/tinyscrollbar/jquery.tinyscrollbar.min.js"></script>
+</head>
+<body>
+<div id="wrapper" style="float:left; height: 330px; width:400px;">
+	<form method=POST enctype="multipart/form-data" action="/picasa_image/add_photo">
+	        <input name="userfile" type="file"> 
+	        <input type="submit" />
+	</form>
+	 
+<div id="scrollbar1">
+	<div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+	<div class="viewport">
+		<div class="overview">
+		
+					<div id="albums"></div>
+		</div>
+	</div>
+</div>
+	
+	
+</div>
+	<script type="text/javascript">
+		$("#wrapper").css('background', 'url("/static/images/indicator.gif") no-repeat scroll center center transparent');
+		$.ajax({  
+			  type: "POST",  
+			  url: "/picasa_image/show_albums",  
+			  data: {},  
+			  success: function(html) {
+				$("#wrapper").css('background', 'none');
+			  	$("#albums").html(html);
+			  	jQuery('#scrollbar1').tinyscrollbar();  
+			  }
+			});  
+	</script>	
+</body>
+</html>

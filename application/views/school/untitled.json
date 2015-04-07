@@ -1,0 +1,92 @@
+{
+  "1": {
+    "formatted_address": "No. 283, Taizhong Road, East District, Taichung City, Taiwan 401",
+    "lat": 24.1287304,
+    "lng": 120.68517369999995
+  },
+  "2": {
+    "formatted_address": "No. 823, Section 7, Taiwan Boulevard, Shalu District, Taichung City, Taiwan 433",
+    "lat": 24.2385428,
+    "lng": 120.56787540000005
+  },
+  "3": {
+    "formatted_address": "The Affiliated Industrial Vocational High School of National Changhua University of Education, No. 1, Gongxiao Street, Changhua City, Changhua County, Taiwan 500",
+    "lat": 24.0825928,
+    "lng": 120.55597169999999
+  },
+  "4": {
+    "formatted_address": "No. 326, Section 1, Nanguo Road, Changhua City, Changhua County, Taiwan 500",
+    "lat": 24.0729395,
+    "lng": 120.55312549999996
+  },
+  "5": {
+    "formatted_address": "No. 86, Section 2, Daxi Road, Xihu Township, Changhua County, Taiwan 514",
+    "lat": 23.9680344,
+    "lng": 120.48718329999997
+  },
+  "6": {
+    "formatted_address": "No. 57, Shizhai Street, East District, Chiayi City, Taiwan 600",
+    "lat": 23.4717071,
+    "lng": 120.45869779999998
+  },
+  "7": {
+    "formatted_address": "No. 68, Zhongzheng Road, Xinying District, Tainan City, Taiwan 730",
+    "lat": 23.3132755,
+    "lng": 120.31683079999993
+  },
+  "8": {
+    "formatted_address": "No. 1, Shiping Road, Anping District, Tainan City, Taiwan 708",
+    "lat": 22.9935902,
+    "lng": 120.15177360000007
+  },
+  "9": {
+    "formatted_address": "No. 327, Section 1, Jiankang Road, South District, Tainan City, Taiwan 702",
+    "lat": 22.9812339,
+    "lng": 120.20229810000001
+  },
+  "10": {
+    "formatted_address": "No. 193, Zhongshan South Road, Yongkang District, Tainan City, Taiwan 710",
+    "lat": 23.0145585,
+    "lng": 120.23354829999994
+  },
+  "11": {
+    "formatted_address": "804, Taiwan, Kaohsiung City, Gushan District, 美術館路89號",
+    "lat": 22.6546495,
+    "lng": 120.28914780000002
+  },
+  "12": {
+    "formatted_address": "No. 66, Fengyu Street, Donggang Township, Pingtung County, Taiwan 928",
+    "lat": 22.4651957,
+    "lng": 120.44211040000005
+  },
+  "13": {
+    "formatted_address": "No. 95, Section 1, Ziyou Road, West District, Taichung City, Taiwan 403",
+    "lat": 24.1360434,
+    "lng": 120.6777654
+  },
+  "14": {
+    "formatted_address": "No. 143, Section 3, Xinyi Road, Da’an District, Taipei City, Taiwan 106",
+    "lat": 25.0339538,
+    "lng": 121.54055040000003
+  },
+  "15": {
+    "formatted_address": "No. 150, Shishang Road, Shilin District, Taipei City, Taiwan 111",
+    "lat": 25.0945958,
+    "lng": 121.51661089999993
+  },
+  "16": {
+    "formatted_address": "No. 307, Shanggong Road, Tamsui District, New Taipei City, Taiwan 251",
+    "lat": 25.1867923,
+    "lng": 121.4541312
+  },
+  "17": {
+    "formatted_address": "No. 25, Section 1, Wenhua Road, Banqiao District, New Taipei City, Taiwan 220",
+    "lat": 25.0116783,
+    "lng": 121.45907950000003
+  },
+  "18": {
+    "formatted_address": "No. 144, Section 2, Chenggong Road, Guanyin District, Taoyuan City, Taiwan 328",
+    "lat": 25.0367776,
+    "lng": 121.10305749999998
+  }
+}

@@ -1,0 +1,7 @@
+application/config/database.php
+application/config/email.php
+application/cache/*
+.DS_Store
+public/upload/*
+public/media/*
+public/css/scss_cache/*

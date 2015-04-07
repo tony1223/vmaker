@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en" data-framework="angularjs">
+<head>
+	<title></title>
+
+	<style>[ng-cloak] { display: none; }</style>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+	<script src="js/angular-loader.js"></script>
+
+	<style>
+		.img-selected{
+			border:1px solid red;
+		}
+		body{
+			padding:20px;
+		}
+	</style>
+
+</head>
+<body>
+
+	<div id="app" ng-controller="ImageController" ng-cloak >
+		<ul style="padding-left:0px;" class="nav nav-tabs col-md-12">
+		  <li role="presentation" ng-click="view=1;showlist=1;"  ng-class="{'active': view == 1 }" class="active"><a href="javascript:void 0;">瀏覽圖片</a></li>
+		  <li role="presentation" ng-click="view=2;showlist=0;" ng-class="{'active': view == 2 }" ><a href="javascript:void 0;">上傳</a></li>
+		</ul>
+
+		<ul ng-show="showlist" id="image-list" class="clearfix" style="list-style:none;padding-left:0px;border:1px solid gray;clear:both;">
+			<li ng-click="selectImg(img)" ng-repeat="img in images" style="width:200px;height:200px;float:left;cursor:pointer;" class="img-thumbnail"  ng-class="{'img-selected': img.selected }">
+				<img style="width:100%;" ng-src="{{img.url}}" />
+			</li>
+			<li ng-if="listempty"style="padding:40px;color:gray;min-height:100px;">您尚未上傳過任何照片</li>
+		</ul>
+
+		<div ng-show="!showlist" id="wrapper" style="padding:20px;float:left; height: 330px; width:400px;">
+			<form action="/image/upload" ng-upload="completed(content)">
+		    	<p>
+		    		<input style="float:left;" type="file" name="image"></input>
+		    		<button class='btn btn-active' style='float:left;cursor: pointer' upload-submit>上傳</button> </p>
+		   </form>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="/js/jquery-1.11.2.min.js"></script>
+	<script data-main="js/dialog" src="js/require.js"></script>
+</body>
+</html>
